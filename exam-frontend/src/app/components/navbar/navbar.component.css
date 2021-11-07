@@ -1,0 +1,22 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+.navbar{
+  height: 80px;
+  background-color: black;
+  
+}
+#black{
+color:red
+}
+#black1{
+  color: red
+}
+#black2{
+  color: red
+}
+#black3{
+color: red
+}

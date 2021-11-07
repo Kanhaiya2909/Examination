@@ -1,0 +1,50 @@
+<mat-card *ngIf="user">
+  <h1 class="text-center">Your Profile Details</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="container">
+        <div class="container text-center">
+          <img class="profile-image" src="../../../assets/profile.jpg" alt="" />
+          <h1 class="mt20">{{ login.getUser().firstName }} {{ login.getUser().lastName }}</h1>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <table class="table text-center">
+              <tr>
+                <td>Username</td>
+                <td>{{login.getUser().username}}</td>
+              </tr>
+              <tr>
+                <td>UserId</td>
+                <td>{{login.getUser().lastName}}{{login.getUser().id}}</td>
+              </tr>
+              <tr>
+                <td>Phone Number</td>
+                <td>{{login.getUser().phone}}</td>
+              </tr>
+              <tr>
+                <td>Email Address</td>
+                <td>{{login.getUser().emailId}}</td>
+              </tr>
+              <tr>
+                <td>Role</td>
+                <td>{{login.getUser().authorities[0].authority}}</td>
+              </tr>
+              <tr>
+                <td>STATUS</td>
+                <td>{{login.getUser().enabled ? "ACTIVE":"NOT AVTIVE"}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </mat-card-content>
+
+
+  <mat-card-actions class="text-center">
+    <button mat-raised-button color="primary">UPDATE</button>
+    <button mat-raised-button color="accent">DELETE</button>
+  </mat-card-actions>
+</mat-card>

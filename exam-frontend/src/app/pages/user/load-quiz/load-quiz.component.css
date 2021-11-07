@@ -1,0 +1,18 @@
+.truncate{
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.example-header-image {
+    background-image: url('../../../../assets/exam.png');
+    background-size: cover;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  }

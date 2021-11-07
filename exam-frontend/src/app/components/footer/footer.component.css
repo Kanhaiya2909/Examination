@@ -1,0 +1,17 @@
+.footer{
+    background-color: black;
+    color: black;
+    margin-top: auto;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.column {
+    float: left;
+    width: 27%;
+   height: 100%;
+}
+p {
+    font-size:20px;
+    font-weight:bold;
+}

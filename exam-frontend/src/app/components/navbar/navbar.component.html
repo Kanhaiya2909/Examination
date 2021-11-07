@@ -1,0 +1,47 @@
+
+<mat-toolbar class="navbar">
+    <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <!-- <img height="40px" width="80px" src="../../../assets/prat1.png" alt="">  -->
+      <span style="height: 100%; width: max-content; font-size: 40px;">PRATICEX</span></a>
+     
+    
+   <span class="example-spacer"></span>
+   <a id="black"
+   *ngIf="!isLoggedIn"
+   [routerLink]="'/login'"
+   mat-icon-button 
+   class="example-icon favorite-icon"
+     aria-label="Example icon-button with heart icon">
+     Login
+   </a>
+   <a
+   id="black1"
+   *ngIf="!isLoggedIn"
+   mat-icon-button 
+   [routerLink]="'/signup'"
+   class="example-icon favorite-icon ml20 mr20"
+    aria-label="Example icon-button with heart icon">
+   Register
+  </a>
+  <button
+  id="black2"
+   *ngIf="login.isLoggedIn && user"
+   mat-icon-button 
+   class="example-icon favorite-icon ml20"
+   style="margin-right: 120px;"
+   routerLink="/user-dashboard/0"
+    aria-label="Example icon-button with heart icon">
+   {{ login.getUser().username }}
+  </button>
+  <!-- routerLink="/admin/profile" -->
+  <a
+  id="black3"
+  (click)="logout()"
+   *ngIf="isLoggedIn"
+   mat-icon-button 
+   class="example-icon favorite-icon ml20 mr20"
+    aria-label="Example icon-button with heart icon">
+   Logout
+  </a>
+   
+ </mat-toolbar>
